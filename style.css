@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 10%;
+    
+}
+
+/* Header */
+
+.main-header {
+    background-color: var(--primary-color);
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-header .logo {
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.main-header .burger {
+    width: 5%;
+    cursor: pointer;
+    
+}
+
+.main-header .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.main-header .search {
+    width: 50%;
+}
+
+.main-header .search input {
+    width: 80%;
+    height: 80%;
+    padding: 5px;
+    font-size: 20px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color) transparent;
+}
+
+.main-header .search i {
+    font-size: 1.5rem;
+}
+
+.main-header .search input:focus {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main-header .icons i {
+    margin: 0 20px;
+    font-size: 1.7rem;
+}
+
+.main-header .icons {
+   display: flex; 
+}
+.main-header .icons div {
+    transition: all 1s;
+}
+.main-header .burger:hover,
+.main-header .icons div:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    color: #333;
+}
+
+/* Main Section */
+
+.main-section {
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 1.2fr 9fr;
+    height: 100%;
+}
+
+/* Section left */
+
+.section-left .dotted {
+    border-bottom: 1px solid rgb(145, 142, 142);
+}
+
+.section-left ul li {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    width: 90%;
+    transition: background-color 0.2s ease-in;
+}
+
+.section-left ul li:hover {
+    background-color: #b4b0b0;
+    cursor: pointer;
+}
+
+.section-left ul li > * {
+    margin-left: 10px;
+}
+
+/* Section right */
+
+.section-right .article1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-right .article1 .top-article,
+.section-right .article1 .bottom-article {
+    display: flex;
+}
+
+.section-right .article1 .bottom-article {
+    border-top: 1px solid grey;
+    padding: 1rem 0;
+}
+
+.section-right .article1 .top-article .left-article,
+.section-right .article1 .bottom-article .left-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.section-right .article1 .top-article .left-article i,
+.section-right .article1 .top-article .left-article h3,
+.section-right .article1 .bottom-article .left-article i,
+.section-right .article1 .bottom-article .left-article h3{
+    text-align: center;
+    padding: 0 0.2rem;
+    font-size: 0.9rem;
+}
+
+.section-right .article1 .top-article .left-article h3 {
+    width: 104px;
+}
+
+.section-right .article1 .top-article .right-article img {
+    padding-top: 10px;
+}
+
+.section-right .article1 .top-article .right-article,
+.section-right .article1 .bottom-article .right-article {
+    padding: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    right: -50px;
+}
+
+.section-right .article2 .right-article {
+    width: 80%;
+}
+
+.section-right .article2 {
+    display: flex;
+    padding: 1.5rem 1rem;
+    align-items: center;
+}
+
+.section-right .article2 .left-article {
+    display: flex;
+    width: 17%;
+}
+
+.section-right .article2 .left-article i,
+.section-right .article2 .left-article h3,
+.section-right .article2 .left-article i,
+.section-right .article2 .left-article h3{
+    text-align: center;
+    padding: 0 0.2rem;
+    font-size: 0.9rem;
+}
+
+.section-right > h3 {
+    margin: 1rem;
+}
+
+/* Notification */
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    font-weight: bolder;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 100%);
+    width: 25%;
+    height: 300px;
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+}
+
+.notification >:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.notification h3 {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    color: black;
+    text-shadow: black;
+}
+
+.notification p a {
+    color: var(--primary-color);
+}
+
+.notification .btn {
+    margin-top: 1rem;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+.notification .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
